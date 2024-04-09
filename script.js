@@ -37,6 +37,7 @@ function fetchComments(postId){
     .then(comments =>{
         //відображення поста та коментарів
         let postDetails = document.getElementById('postDetails');
+        postDetails.innerHTML = '';
         let commentsHTML = '<h3>Коментарі:</h3><ul>';
         comments.forEach(comment => {
             //додавання коментарів до HTML рядка
